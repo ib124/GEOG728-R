@@ -1,0 +1,53 @@
+---
+title: "Week 4 Notes"
+author: "Isaac Barnhart"
+date: "2/8/2022"
+output:
+  html_document: default
+  word_document: default
+---
+# pivot_longer()
+
+cols - Names of the columns needing to be combined
+
+names_to - What should be the name of the column containing the original column names?
+
+values_to - What should be the name of the column containing the observed values taken from the original table cells?
+
+### More about going longer
+```{r}
+#billboard %>%
+  #pivot_longer(
+    #cols = starts_with("wk"),
+    #names_to = "week",
+    #names_prefix = "wk",
+    #values_to = "rank",
+    #values_drop_na = TRUE) %>%
+    #head()
+
+#us_rent_income %>%
+ #pivot_wider(names_from = variable, falues_from = c(estate, moe)) %>%
+  #head()
+  
+#us_rent_income %>%
+  #pivot_wider(
+    #names_from = variable,
+    #names_sep = ".",
+    #values_from = c(estimate, moe)) %>%
+  #head()
+```
+
+```{r}
+#Create github persnal access token
+#usethis::create_github_token()
+
+#credentials::set_github_pat("Paste your token here")
+```
+
+
+
+```{r setup, include=FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
