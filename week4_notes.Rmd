@@ -12,7 +12,7 @@ cols - Names of the columns needing to be combined
 
 names_to - What should be the name of the column containing the original column names?
 
-values_to - What should be the name of the column containing the observed values taken from the original table cells?
+values_to - What should be the name of the column containing the observed values taken from the original table cells?aas
 
 ### More about going longer
 ```{r}
